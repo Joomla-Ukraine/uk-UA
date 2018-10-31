@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" version="3.7" method="upgrade">
+	<name>uk-UA</name>
+	<packagename>uk-UA</packagename>
+	<version>3.7.1.1</version>
+	<creationDate>18/05/2017</creationDate>
+	<author>Denys Nosov</author>
+	<authorEmail>denys@joomla-ua.org</authorEmail>
+	<authorUrl>http://joomla-ua.org</authorUrl>
+	<copyright>2006-2017 (C) Joomla! Ukraine (http://joomla-ua.org). All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<url>http://joomla-ua.org</url>
+	<packager>Joomla! Ukraine</packager>
+	<packagerurl>http://joomla-ua.org</packagerurl>
+	<description><![CDATA[<div style="background: #fff; border: 1px #ccc solid; padding: 15px; overflow: hidden; text-align: left!important;"><h2>Український пакет локалізації Joomla!</h2><p style="font-weight: normal!important;"><strong>Будь ласка, зробіть пожертвування на розвиток спільноти та своєчасного оновлення української локалізації!</span></strong></p><pstyle="font-weight: normal!important;"><a class="btn btn-success" href="http://joomla-ua.org/donation" target="_blank">Підтримай українську локалізацію</a></p><pstyle="font-weight: normal!important;">Офіційний сайт локалізації: <a href="http://joomla-ua.org/" target="_blank">Joomla! Україна</a><br />Форум підтримки: <a href="http://joomla-ua.org/forum/">Форум Joomla! Україна</a><br /><br /><span style="font-size: 85%;">2006-2017 &copy; Joomla! Україна. Всі права захищено!</span></p></div>]]></description>
+	<blockChildUninstall>true</blockChildUninstall>
+	<files>
+		<file type="language" client="site" id="uk-UA">site_uk-UA.zip</file>
+		<file type="language" client="administrator" id="uk-UA">admin_uk-UA.zip</file>
+	</files>
+	<updateservers>
+	    <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+	</updateservers>
+</extension>
