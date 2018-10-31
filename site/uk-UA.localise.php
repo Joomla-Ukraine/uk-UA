@@ -25,26 +25,31 @@ abstract class Uk_UALocalise
 	 */
 	public static function getPluralSuffixes($count)
 	{
-		if($count == 0)
+		if( $count == 0 )
 		{
-			$return = array('0');
+			$return = array ( '0' );
 		}
 		else
 		{
-			$return = array(($count % 10 == 1 && $count % 100 != 11 ? '1' : ($count % 10 >= 2 && $count % 10 <= 4 && ($count % 100 < 10 || $count % 100 >= 20) ? '2' : 'MORE')));
+			$return = array ( $count % 10 == 1 && $count % 100 != 11 ? '1' : ($count % 10 >= 2 && $count % 10 <= 4 && ($count % 100 < 10 || $count % 100 >= 20) ? '2' : 'MORE') );
 		}
 
 		return $return;
 	}
 
+	/**
+	 * @param $string
+	 *
+	 * @return mixed|null|string|string[]
+	 */
 	public static function transliterate($string)
 	{
-		switch (uk_UALocalise::simple_detect_language($string))
+		switch ( uk_UALocalise::simple_detect_language($string) )
 		{
 			case 'ru':
 				$str = JString::strtolower($string);
 
-				$glyph_array = array(
+				$glyph_array = array (
 					'a'       => 'а',
 					'b'       => 'б',
 					'v'       => 'в',
@@ -85,7 +90,7 @@ abstract class Uk_UALocalise
 					'protsen' => '%',
 				);
 
-				foreach ($glyph_array as $letter => $glyphs)
+				foreach ( $glyph_array as $letter => $glyphs )
 				{
 					$glyphs = explode(',', $glyphs);
 					$str    = str_replace($glyphs, $letter, $str);
@@ -99,72 +104,72 @@ abstract class Uk_UALocalise
 
 			default:
 			case 'ua':
-				$trans = array(
-					"а" => "a",
-					"б" => "b",
-					"в" => "v",
-					"г" => "h",
-					"ґ" => "g",
-					"д" => "d",
-					"е" => "e",
-					"ё" => "e",
-					"э" => "e",
-					"є" => "ie",
-					"ж" => "zh",
-					"з" => "z",
-					"и" => "y",
-					"ы" => "y",
-					"і" => "i",
-					"ї" => "i",
-					"й" => "i",
-					"к" => "k",
-					"л" => "l",
-					"м" => "m",
-					"н" => "n",
-					"о" => "o",
-					"п" => "p",
-					"р" => "r",
-					"с" => "s",
-					"т" => "t",
-					"у" => "u",
-					"ф" => "f",
-					"х" => "kh",
-					"ц" => "ts",
-					"ч" => "ch",
-					"ш" => "sh",
-					"щ" => "shch",
-					"ю" => "iu",
-					"я" => "ia",
+				$trans = array (
+					'а' => 'a',
+					'б' => 'b',
+					'в' => 'v',
+					'г' => 'h',
+					'ґ' => 'g',
+					'д' => 'd',
+					'е' => 'e',
+					'ё' => 'e',
+					'э' => 'e',
+					'є' => 'ie',
+					'ж' => 'zh',
+					'з' => 'z',
+					'и' => 'y',
+					'ы' => 'y',
+					'і' => 'i',
+					'ї' => 'i',
+					'й' => 'i',
+					'к' => 'k',
+					'л' => 'l',
+					'м' => 'm',
+					'н' => 'n',
+					'о' => 'o',
+					'п' => 'p',
+					'р' => 'r',
+					'с' => 's',
+					'т' => 't',
+					'у' => 'u',
+					'ф' => 'f',
+					'х' => 'kh',
+					'ц' => 'ts',
+					'ч' => 'ch',
+					'ш' => 'sh',
+					'щ' => 'shch',
+					'ю' => 'iu',
+					'я' => 'ia',
 
-					"ь"  => "",
-					"Ь"  => "",
-					"ъ"  => "",
-					"Ъ"  => "",
-					"!"  => "",
-					"?"  => "",
-					":"  => "",
-					";"  => "",
-					"’"  => "",
-					"'"  => "",
-					"—"  => "",
-					"--" => "",
-					"-"  => "",
-					"."  => "",
+					'ь'  => '',
+					'Ь'  => '',
+					'ъ'  => '',
+					'Ъ'  => '',
+					'!'  => '',
+					'?'  => '',
+					':'  => '',
+					';'  => '',
+					'’'  => '',
+					"'"  => '',
+					'—'  => '',
+					'--' => '',
+					'-'  => '',
+					'.'  => '',
 
-					"@" => "",
-					"#" => "",
-					"^" => "",
-					"*" => "",
-					"(" => "",
-					")" => "",
-					"_" => "",
-					"=" => "",
-					"+" => "",
+					'@' => '',
+					'#' => '',
+					'^' => '',
+					'*' => '',
+					'(' => '',
+					')' => '',
+					'_' => '',
+					'=' => '',
+					'+' => '',
 
-					"₴" => "uah",
-					"€" => "eur",
-					"$" => "usd",
-					"%" => "protsent",
+					'₴' => 'uah',
+					'€' => 'eur',
+					'$' => 'usd',
+					'%' => 'protsent',
 
 					'à' => 'a',
 					'ô' => 'o',
@@ -272,41 +277,41 @@ abstract class Uk_UALocalise
 					'ĕ' => 'e',
 					'œ' => 'oe',
 
-					"А" => "A",
-					"Б" => "B",
-					"В" => "V",
-					"Г" => "H",
-					"Ґ" => "G",
-					"Д" => "D",
-					"Е" => "E",
-					"Ё" => "E",
-					"Э" => "E",
-					"Є" => "Ye",
-					"Ж" => "Zh",
-					"З" => "Z",
-					"И" => "Y",
-					"Й" => "Y",
-					"Ы" => "Y",
-					"І" => "I",
-					"Ї" => "Yi",
-					"К" => "K",
-					"Л" => "L",
-					"М" => "M",
-					"Н" => "N",
-					"О" => "O",
-					"П" => "P",
-					"Р" => "R",
-					"С" => "S",
-					"Т" => "T",
-					"У" => "U",
-					"Ф" => "F",
-					"Х" => "Kh",
-					"Ц" => "Ts",
-					"Ч" => "Ch",
-					"Ш" => "Sh",
-					"Щ" => "Shch",
-					"Ю" => "Yu",
-					"Я" => "Ya",
+					'А' => 'A',
+					'Б' => 'B',
+					'В' => 'V',
+					'Г' => 'H',
+					'Ґ' => 'G',
+					'Д' => 'D',
+					'Е' => 'E',
+					'Ё' => 'E',
+					'Э' => 'E',
+					'Є' => 'Ye',
+					'Ж' => 'Zh',
+					'З' => 'Z',
+					'И' => 'Y',
+					'Й' => 'Y',
+					'Ы' => 'Y',
+					'І' => 'I',
+					'Ї' => 'Yi',
+					'К' => 'K',
+					'Л' => 'L',
+					'М' => 'M',
+					'Н' => 'N',
+					'О' => 'O',
+					'П' => 'P',
+					'Р' => 'R',
+					'С' => 'S',
+					'Т' => 'T',
+					'У' => 'U',
+					'Ф' => 'F',
+					'Х' => 'Kh',
+					'Ц' => 'Ts',
+					'Ч' => 'Ch',
+					'Ш' => 'Sh',
+					'Щ' => 'Shch',
+					'Ю' => 'Yu',
+					'Я' => 'Ya',
 
 					'À' => 'A',
 					'Ô' => 'O',
@@ -413,47 +418,57 @@ abstract class Uk_UALocalise
 					'Œ' => 'Oe'
 				);
 
-				if(preg_match("/[а-яА-Я]/", $string))
+				if( preg_match('/[а-яА-Я]/', $string) )
 				{
 					return strtr($string, $trans);
 				}
-				else
-				{
-					return $string;
-				}
+
+				return $string;
 
 				break;
 		}
 	}
 
+	/**
+	 * @param $text
+	 *
+	 * @return int|null|string
+	 */
 	public static function simple_detect_language($text)
 	{
-
-		$detectLang = array(
-			'ua' => array('ґ', 'і', 'ї', 'є', 'її', 'цьк', 'ськ', 'ія', 'ння', 'ій', 'ися', 'ись', '’я', '’ю', 'р’', '\'я', '\'ю', 'р\'', 'б’', 'б\'', 'п’', 'п\'', 'в’', 'в\'', 'м’', 'м\'', 'ф’', 'ф\'', 'головна'),
-			'ru' => array('ы', 'э', 'ё', 'ъ', 'ее', 'её', 'цк', 'ск', 'ия', 'сс', 'ую', 'ение', 'главная', 'ии'),
+		$detectLang = array (
+			'ua' => array (
+				'ґ', 'і', 'ї', 'є', 'її', 'цьк', 'ськ', 'ія', 'ння', 'ій', 'ися', 'ись', '’я', '’ю', 'р’', '\'я', '\'ю',
+				'р\'', 'б’', 'б\'', 'п’', 'п\'', 'в’', 'в\'', 'м’', 'м\'', 'ф’', 'ф\'', 'головна'
+			),
+			'ru' => array ( 'ы', 'э', 'ё', 'ъ', 'ее', 'её', 'цк', 'ск', 'ия', 'сс', 'ую', 'ение', 'главная', 'ии' ),
 		);
 
 		# Get chars presence index
-		$langsDetected = array();
-		foreach ($detectLang as $langId => $nativeChars)
+		$langsDetected = array ();
+		foreach ( $detectLang as $langId => $nativeChars )
 		{
-			$langsDetected[$langId] = 0;
-			foreach ($nativeChars as $nativeChr)
-				if(preg_match("/$nativeChr/ui", $text))
-					$langsDetected[$langId] += 1 / count($nativeChars);
+			$langsDetected[ $langId ] = 0;
+			foreach ( $nativeChars as $nativeChr )
+			{
+				if( preg_match("/$nativeChr/ui", $text) )
+				{
+					$langsDetected[ $langId ] += 1 / count($nativeChars);
+				}
+			}
 		}
 
 		# Get the most preferred language for this text
-		//$langsList    = array_keys($detectLang);
 		$lang         = null;
 		$langIndexMax = 0;
-		foreach ($langsDetected as $langId => $index)
-			if($index > $langIndexMax)
+		foreach ( $langsDetected as $langId => $index )
+		{
+			if( $index > $langIndexMax )
 			{
 				$langIndexMax = $index;
 				$lang         = $langId;
 			}
+		}
 
 		return $lang;
 	}
@@ -466,7 +481,7 @@ abstract class Uk_UALocalise
 	 */
 	public static function getIgnoredSearchWords()
 	{
-		$search_ignore   = array();
+		$search_ignore   = array ();
 		$search_ignore[] = 'href';
 		$search_ignore[] = 'lol';
 		$search_ignore[] = 'www';
