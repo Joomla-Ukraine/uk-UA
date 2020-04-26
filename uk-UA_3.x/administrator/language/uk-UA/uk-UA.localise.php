@@ -18,20 +18,20 @@ abstract class Uk_UALocalise
 	/**
 	 * Returns the potential suffixes for a specific number of items
 	 *
-	 * @param    int $count The number of items.
+	 * @param int $count The number of items.
 	 *
 	 * @return    array  An array of potential suffixes.
 	 * @since    1.6
 	 */
 	public static function getPluralSuffixes($count)
 	{
-		if( $count == 0 )
+		if($count == 0)
 		{
-			$return = array ( '0' );
+			$return = [ '0' ];
 		}
 		else
 		{
-			$return = array ( $count % 10 == 1 && $count % 100 != 11 ? '1' : ($count % 10 >= 2 && $count % 10 <= 4 && ($count % 100 < 10 || $count % 100 >= 20) ? '2' : 'MORE') );
+			$return = [ $count % 10 == 1 && $count % 100 != 11 ? '1' : ($count % 10 >= 2 && $count % 10 <= 4 && ($count % 100 < 10 || $count % 100 >= 20) ? '2' : 'MORE') ];
 		}
 
 		return $return;
@@ -44,12 +44,11 @@ abstract class Uk_UALocalise
 	 */
 	public static function transliterate($string)
 	{
-		switch ( uk_UALocalise::simple_detect_language($string) )
+		switch(uk_UALocalise::simple_detect_language($string))
 		{
 			case 'ru':
 				$str = JString::strtolower($string);
-
-				$glyph_array = array (
+				$glyph_array = [
 					'a'       => 'а',
 					'b'       => 'б',
 					'v'       => 'в',
@@ -88,23 +87,21 @@ abstract class Uk_UALocalise
 					'eur'     => '€',
 					'usd'     => '$',
 					'protsen' => '%',
-				);
+				];
 
-				foreach ( $glyph_array as $letter => $glyphs )
+				foreach($glyph_array as $letter => $glyphs)
 				{
 					$glyphs = explode(',', $glyphs);
 					$str    = str_replace($glyphs, $letter, $str);
 				}
 
-				$str = preg_replace('#\&\#?[a-z0-9]+\;#ismu', '', $str);
-
-				return $str;
+				return preg_replace('#&\#?[a-z0-9]+;#ismu', '', $str);
 
 				break;
 
 			default:
 			case 'ua':
-				$trans = array (
+				$trans = [
 					'а' => 'a',
 					'б' => 'b',
 					'в' => 'v',
@@ -416,9 +413,9 @@ abstract class Uk_UALocalise
 					'Æ' => 'Ae',
 					'Ĕ' => 'E',
 					'Œ' => 'Oe'
-				);
+				];
 
-				if( preg_match('/[а-яА-Я]/', $string) )
+				if(preg_match('/[а-яА-Я]/u', $string))
 				{
 					return strtr($string, $trans);
 				}
@@ -436,22 +433,64 @@ abstract class Uk_UALocalise
 	 */
 	public static function simple_detect_language($text)
 	{
-		$detectLang = array (
-			'ua' => array (
-				'ґ', 'і', 'ї', 'є', 'її', 'цьк', 'ськ', 'ія', 'ння', 'ій', 'ися', 'ись', '’я', '’ю', 'р’', '\'я', '\'ю',
-				'р\'', 'б’', 'б\'', 'п’', 'п\'', 'в’', 'в\'', 'м’', 'м\'', 'ф’', 'ф\'', 'головна'
-			),
-			'ru' => array ( 'ы', 'э', 'ё', 'ъ', 'ее', 'её', 'цк', 'ск', 'ия', 'сс', 'ую', 'ение', 'главная', 'ии' ),
-		);
+		$detectLang = [
+			'ua' => [
+				'ґ',
+				'і',
+				'ї',
+				'є',
+				'її',
+				'цьк',
+				'ськ',
+				'ія',
+				'ння',
+				'ій',
+				'ися',
+				'ись',
+				'’я',
+				'’ю',
+				'р’',
+				'\'я',
+				'\'ю',
+				'р\'',
+				'б’',
+				'б\'',
+				'п’',
+				'п\'',
+				'в’',
+				'в\'',
+				'м’',
+				'м\'',
+				'ф’',
+				'ф\'',
+				'головна'
+			],
+			'ru' => [
+				'ы',
+				'э',
+				'ё',
+				'ъ',
+				'ее',
+				'её',
+				'цк',
+				'ск',
+				'ия',
+				'сс',
+				'ую',
+				'ение',
+				'главная',
+				'ии'
+			],
+		];
 
 		# Get chars presence index
-		$langsDetected = array ();
-		foreach ( $detectLang as $langId => $nativeChars )
+		$langsDetected = [];
+		foreach($detectLang as $langId => $nativeChars)
 		{
 			$langsDetected[ $langId ] = 0;
-			foreach ( $nativeChars as $nativeChr )
+			foreach($nativeChars as $nativeChr)
 			{
-				if( preg_match("/$nativeChr/ui", $text) )
+				if(preg_match("/$nativeChr/ui", $text))
 				{
 					$langsDetected[ $langId ] += 1 / count($nativeChars);
 				}
@@ -461,9 +500,9 @@ abstract class Uk_UALocalise
 		# Get the most preferred language for this text
 		$lang         = null;
 		$langIndexMax = 0;
-		foreach ( $langsDetected as $langId => $index )
+		foreach($langsDetected as $langId => $index)
 		{
-			if( $index > $langIndexMax )
+			if($index > $langIndexMax)
 			{
 				$langIndexMax = $index;
 				$lang         = $langId;
@@ -481,7 +520,7 @@ abstract class Uk_UALocalise
 	 */
 	public static function getIgnoredSearchWords()
 	{
-		$search_ignore   = array ();
+		$search_ignore   = [];
 		$search_ignore[] = 'href';
 		$search_ignore[] = 'lol';
 		$search_ignore[] = 'www';
