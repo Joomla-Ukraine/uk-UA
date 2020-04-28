@@ -1,0 +1,4 @@
+#status .btn-toolbar .pull-right p:before{
+	content: "© 2020 Joomla! Україна";
+	margin-right: 6px;
+}
