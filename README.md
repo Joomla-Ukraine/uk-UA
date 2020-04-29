@@ -4,6 +4,8 @@
 # Joomla! 4.x (uk-UA)
 Українська локалізація Joomla! 4.x / Ukrainian localization for Joomla! 4.x
 
+---
+
 **Українська спільнота:**
 
 https://joomla-ua.org/
@@ -11,3 +13,7 @@ https://joomla-ua.org/
 **Завантаження української локалізації:** 
 
 https://joomla-ua.org/localization
+
+---
+
+![JetBrains](https://joomla-ua.org/images/joomla_transteam_sm.png)
