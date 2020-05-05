@@ -25,15 +25,12 @@ abstract class Uk_UALocalise
 	 */
 	public static function getPluralSuffixes($count)
 	{
-		if ($count == 0)
+		if($count == 0)
 		{
-			$return = array('0');
-		}
-		else {
-			$return = array(($count%10==1 && $count%100!=11 ? '1' : ($count%10>=2 && $count%10<=4 && ($count%100<10 || $count%100>=20)? '2' : 'MORE')));
+			return [ '0' ];
 		}
 
-		return $return;
+		return [ $count % 10 == 1 && $count % 100 != 11 ? '1' : $count % 10 >= 2 && $count % 10 <= 4 && ($count % 100 < 10 || $count % 100 >= 20) ? '2' : 'MORE' ];
 	}
 
 	/**
