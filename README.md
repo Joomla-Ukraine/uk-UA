@@ -3,7 +3,7 @@
 
 **Завантажити:** [Версія локалізації 3.9.18.5](http://joomlacode.org/gf/download/frsrelease/17504/165597/uk-UA_joomla_lang_full_3.9.18v5.zip)
 
-##Як я можу допомогти з українським перекладом?
+## Як я можу допомогти з українським перекладом?
 * [Ви можете залишити свої побажання або запитання](https://github.com/Joomla-Ukraine/uk-UA/issues)
 * [Зробити вклад у локалізацію та надіслати нам свій Pull Request](https://github.com/Joomla-Ukraine/uk-UA/pulls)
 * [Приєднатися до локалізації розширень](https://github.com/Joomla-Ukraine?q=uk-UA)
@@ -12,13 +12,13 @@
 Українська локалізація Joomla! 4.x (на даний момент в очікуванні перших офіційних RC)
 
 ---
-#Локалізації української спільноти Joomla
+# Локалізації української спільноти Joomla
 
 https://github.com/Joomla-Ukraine?q=uk-UA
 
 ---
 
-#Українська спільнота
+# Українська спільнота
 
 **Чат української спільноти в Telegram:** https://t.me/joomla_ua
 
@@ -26,13 +26,13 @@ https://github.com/Joomla-Ukraine?q=uk-UA
 
 Форум: https://joomla-ua.org/forum/
 
-##Завантаження української локалізації
+## Завантаження української локалізації
 
 https://joomla-ua.org/localization
 
 ---
 
-#Joomla! Translation Team
+# Joomla! Translation Team
 
 Українська спільнота Joomla! (Joomla! Україна) є членом Joomla! Translation Team.
 
