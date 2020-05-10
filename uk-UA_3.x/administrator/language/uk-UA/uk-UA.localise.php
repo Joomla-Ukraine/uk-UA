@@ -43,7 +43,7 @@ abstract class Uk_UALocalise
 		switch(uk_UALocalise::simple_detect_language($string))
 		{
 			case 'ru':
-				$str = JString::strtolower($string);
+				$str         = JString::strtolower($string);
 				$glyph_array = [
 					'a'       => 'а',
 					'b'       => 'б',
