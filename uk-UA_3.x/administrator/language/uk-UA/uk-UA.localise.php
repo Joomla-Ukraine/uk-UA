@@ -1,14 +1,17 @@
 <?php
 /**
- * @version        $Id: language.php 15628 2010-03-27 05:20:29Z infograf768 $
- * @copyright      Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.
- * @license        GNU General Public License version 2 or later; see LICENSE.txt
+ * @package    Joomla.Language
+ *
+ * @copyright  Copyright (C) 2005 - 2020 Open Source Matters, Inc. All rights reserved.
+ * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
+
+use Joomla\String\StringHelper;
 
 defined('_JEXEC') or die;
 
 /**
- * en-GB localise class
+ * Uk_UA localise class
  *
  * @package        Joomla.Site
  * @since          1.6
@@ -40,10 +43,10 @@ abstract class Uk_UALocalise
 	 */
 	public static function transliterate($string)
 	{
-		switch(uk_UALocalise::simple_detect_language($string))
+		switch(self::simple_detect_language($string))
 		{
 			case 'ru':
-				$str         = JString::strtolower($string);
+				$str         = StringHelper::strtolower($string);
 				$glyph_array = [
 					'a'       => 'а',
 					'b'       => 'б',
@@ -73,12 +76,10 @@ abstract class Uk_UALocalise
 					'ch'      => 'ч',
 					'sh'      => 'ш',
 					'shch'    => 'щ',
-					''        => 'ъ',
+					''        => 'ъ,ь,—',
 					'y'       => 'ы',
-					''        => 'ь',
 					'yu'      => 'ю',
 					'ya'      => 'я',
-					''        => '—',
 					'uah'     => '₴',
 					'eur'     => '€',
 					'usd'     => '$',
@@ -427,7 +428,7 @@ abstract class Uk_UALocalise
 	 *
 	 * @return int|null|string
 	 */
-	public static function simple_detect_language($text)
+	private static function simple_detect_language($text)
 	{
 		$detectLang = [
 			'ua' => [
