@@ -1,7 +1,7 @@
 # Joomla! 3.x (uk-UA)
 Українська локалізація Joomla! 3.x
 
-**Завантажити:** [Версія локалізації 3.9.23.1](http://joomlacode.org/gf/download/frsrelease/17504/165843/uk-UA_joomla_lang_full_3.9.23v1.zip)
+**Завантажити:** [Версія локалізації 3.9.24.1](http://joomlacode.org/gf/download/frsrelease/17504/165904/uk-UA_joomla_lang_full_3.9.24v1.zip)
 
 ## Як я можу допомогти з українським перекладом?
 * [Ви можете залишити свої побажання або запитання](https://github.com/Joomla-Ukraine/uk-UA/issues)
