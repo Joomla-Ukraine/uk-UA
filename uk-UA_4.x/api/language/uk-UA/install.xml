@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension client="api" type="language" method="upgrade">
+	<name>Ukrainian (uk-UA)</name>
+	<tag>uk-UA</tag>
+	<version>4.0.2</version>
+	<creationDate>25.08.2021</creationDate>
+	<author>Joomla! Ukraine</author>
+	<authorEmail>denys@joomla-ua.org</authorEmail>
+	<authorUrl>http://joomla-ua.org</authorUrl>
+	<copyright>(C) 2020 Open Source Matters, Inc.</copyright>
+	<copyright>@copyright 2006-2021 (C) Joomla! Ukraine (https://joomla-ua.org). All rights reserved.
+</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>en-GB api language</description>
+	<files>
+		<folder>/</folder>
+		<filename file="meta">install.xml</filename>
+	</files>
+	<params />
+</extension>
