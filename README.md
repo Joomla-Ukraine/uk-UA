@@ -1,7 +1,7 @@
 # Joomla! 3.x (uk-UA)
 Українська локалізація Joomla! 3.x
 
-**Завантажити:** [Версія локалізації 3.9.24.1](http://joomlacode.org/gf/download/frsrelease/17504/165904/uk-UA_joomla_lang_full_3.9.24v1.zip)
+**Завантажити:** [Версія локалізації 3.10.1.1](http://joomlacode.org/gf/download/frsrelease/17504/166202/uk-UA_joomla_lang_full_3.10.1v1.zip)
 
 # Joomla! 4.x (uk-UA)
 Українська локалізація Joomla! 4.x
