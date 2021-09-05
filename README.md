@@ -1,7 +1,7 @@
 # Joomla! 4.x (uk-UA)
 Українська локалізація Joomla! 4.x
 
-**Завантажити:** [Версія локалізації 4.0.2.beta-2](https://github.com/Joomla-Ukraine/uk-UA/releases/download/4.0.2.beta-2/uk-UA_joomla_lang_full_4.0.2vbeta-2.zip)
+**Завантажити:** [Версія локалізації 4.0.2.1](https://github.com/Joomla-Ukraine/uk-UA/releases/download/4.0.2.1/uk-UA_joomla_lang_full_4.0.2v1.zip)
 
 # Joomla! 3.x (uk-UA)
 Українська локалізація Joomla! 3.x
