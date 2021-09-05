@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metafile client="installation">
-	<tag>uk-UA</tag>
 	<name>Ukrainian (uk-UA)</name>
 	<version>4.0.3</version>
-	<creationDate>2021-09-04</creationDate>
-	<author>Joomla! Ukraine</author>
-	<copyright>Copyright (C) 2005-2021 Open Source Matters. All rights reserved.</copyright>
-	<copyright>Copyright (C) 2006-2021 Joomla! Ukraine (https://joomla-ua.org). All rights reserved.</copyright>
+	<creationDate>September 2021</creationDate>
+	<author>Joomla! Project - Ukrainian translation team</author>
+	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<description>uk-UA  installation language for Joomla</description>
+	<files>
+		<filename>joomla.ini</filename>
+	</files>
 	<metadata>
 		<name>Ukrainian (uk-UA)</name>
 		<nativeName>Українська (Україна)</nativeName>
