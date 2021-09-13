@@ -6,7 +6,7 @@
 
 **Українська локалізація Joomla! 3.x (uk-UA)**
 
-[Версія локалізації 3.10.1.1](http://joomlacode.org/gf/download/frsrelease/17504/166202/uk-UA_joomla_lang_full_3.10.1v1.zip)
+[Версія локалізації 3.10.2.1](http://joomlacode.org/gf/download/frsrelease/17504/166198/uk-UA_joomla_lang_full_3.10.0v1.zip)
 
 ## Приєднатися до української локалізації Joomla
 
