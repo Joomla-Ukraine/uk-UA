@@ -14,7 +14,7 @@
 * [Приєднатися до локалізації розширень](https://github.com/Joomla-Ukraine?q=uk-UA)
 
 **Зв'язок зі спільнотою**
-* Telegram-чат: https://t.me/joomla_ua
+* Telegram-чат: https://t.me/joomlaua
 * Сайт: https://joomla-ua.org/
 * Форум: https://joomla-ua.org/forum/
 
