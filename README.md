@@ -16,7 +16,7 @@
 **Зв'язок зі спільнотою**
 * Telegram-чат: https://t.me/joomlaua
 * Сайт: https://joomla-ua.org/
-* Форум: https://joomla-ua.org/forum/
+* Форум: https://joomla-ua.org/community/
 
 ---
 **Локалізації української спільноти Joomla**
