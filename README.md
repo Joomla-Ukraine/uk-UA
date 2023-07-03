@@ -1,3 +1,6 @@
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg)](https://stand-with-ukraine.pp.ua)
+
+
 ## Завантажити українську локалізацію Joomla!
 
 **Українська локалізація Joomla! 4.x (uk-UA)**
