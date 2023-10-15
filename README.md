@@ -3,9 +3,9 @@
 
 ## Завантажити українську локалізацію Joomla!
 
-**Українська локалізація Joomla! 4.x (uk-UA)**
+**Українська локалізація Joomla! 5.x (uk-UA)**
 
-[Локалізації для Joomla 4](https://downloads.joomla.org/language-packs/translations-joomla4/downloads/joomla4-ukrainian)
+[Локалізації для Joomla 5](https://downloads.joomla.org/language-packs/translations-joomla5/downloads/joomla5-ukrainian)
 
 ## Приєднатися до української локалізації Joomla
 
