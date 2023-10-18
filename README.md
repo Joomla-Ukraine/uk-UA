@@ -36,4 +36,4 @@ https://joomla-ua.org/localization
 
 Українська спільнота Joomla! ([Joomla! Україна](https://joomla-ua.org)) є членом Joomla! Translation Team.
 
-[![Joomla! Translation Team](https://joomla-ua.org/images/joomla_transteam_sm.png)](https://community.joomla.org/translations/joomla-3-translations/ukrainian-translation.html)
+[![Joomla! Translation Team](https://joomla-ua.org/images/joomla_transteam_sm.png)](https://downloads.joomla.org/language-packs/translations-joomla5/downloads/joomla5-ukrainian)
