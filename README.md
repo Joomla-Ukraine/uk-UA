@@ -22,6 +22,7 @@ https://send.monobank.ua/jar/7u4x6vNRZJ
 * Telegram-чат: https://t.me/joomlaua
 * Сайт: https://joomla-ua.org/
 * Форум: https://joomla-ua.org/community/
+* Загальні питання по Joomla! https://community.joomla-ua.org/t/general
 
 ---
 **Локалізації української спільноти Joomla**
