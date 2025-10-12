@@ -1,6 +1,4 @@
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg)](https://stand-with-ukraine.pp.ua)
-
-## Підтримати донатом
+## Підтримати українську локалізацію донатом
 https://send.monobank.ua/jar/7u4x6vNRZJ
 
 ## Завантажити українську локалізацію Joomla!
@@ -19,10 +17,13 @@ https://send.monobank.ua/jar/7u4x6vNRZJ
 * [Приєднатися до локалізації розширень](https://github.com/Joomla-Ukraine?q=uk-UA)
 
 **Зв'язок зі спільнотою**
-* Telegram-чат: https://t.me/joomlaua
-* Сайт: https://joomla-ua.org/
 * Форум: https://joomla-ua.org/community/
 * Загальні питання по Joomla! https://community.joomla-ua.org/t/general
+* Сайт: https://joomla-ua.org/
+
+**Чати**
+* Telegram-чат: https://t.me/joomlaua
+* Telegram-канал: https://t.me/joomla_ua
 
 ---
 **Локалізації української спільноти Joomla**
