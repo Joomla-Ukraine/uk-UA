@@ -3,9 +3,8 @@ https://send.monobank.ua/jar/7u4x6vNRZJ
 
 ## Завантажити українську локалізацію Joomla!
 
-**Українська локалізація Joomla! 6.x (uk-UA)**
-
-[Локалізації для Joomla 6](https://downloads.joomla.org/language-packs/translations-joomla5/downloads/joomla5-ukrainian)
+* [Локалізації для Joomla 6](https://downloads.joomla.org/language-packs/translations-joomla6/downloads/joomla6-ukrainian)
+* [Локалізації для Joomla 5](https://downloads.joomla.org/language-packs/translations-joomla5/downloads/joomla5-ukrainian)
 
 ## Приєднатися до української локалізації Joomla
 
