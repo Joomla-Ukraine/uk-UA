@@ -16,7 +16,7 @@ https://send.monobank.ua/jar/7u4x6vNRZJ
 * [Приєднатися до локалізації розширень](https://github.com/Joomla-Ukraine?q=uk-UA)
 
 **Зв'язок зі спільнотою**
-* Форум: https://joomla-ua.org/community/
+* Форум: https://community.joomla-ua.org/
 * Загальні питання по Joomla! https://community.joomla-ua.org/t/general
 * Сайт: https://joomla-ua.org/
 
